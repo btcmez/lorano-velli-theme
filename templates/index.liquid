@@ -1,6 +1,18 @@
-{% render 'hero-banner' %}
+{% comment %}
+  This is the homepage layout for Lorano Velli.
+  It includes the header, main content (collection list), and footer.
+{% endcomment %}
 
-<div class="featured-collection">
-  <h2>Featured Collection</h2>
+{% section 'header' %}
+
+<main>
+  <!-- Hero Banner Section (if any) -->
+  {% section 'hero-banner' %}
+  
+  <!-- Collection List Section -->
   {% section 'collection-list' %}
-</div>
+  
+  <!-- Any other content can go here -->
+</main>
+
+{% section 'footer' %}
