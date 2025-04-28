@@ -1,0 +1,24 @@
+<h1>Your Cart</h1>
+
+<form action="/cart" method="post">
+  <table>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in cart.items %}
+      <tr>
+        <td>{{ item.product.title }}</td>
+        <td><input type="number" name="updates[]" value="{{ item.quantity }}"></td>
+        <td>{{ item.line_price | money }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <input type="submit" value="Update Cart">
+  <a href="/checkout" class="btn">Checkout</a>
+</form>

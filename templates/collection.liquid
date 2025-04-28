@@ -1,0 +1,13 @@
+<h1>{{ collection.title }}</h1>
+
+<ul class="product-grid">
+  {% for product in collection.products %}
+    <li>
+      <a href="{{ product.url }}">
+        <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+        <h2>{{ product.title }}</h2>
+        <p>{{ product.price | money }}</p>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
