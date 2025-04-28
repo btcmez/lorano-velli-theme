@@ -1,0 +1,8 @@
+<section class="hero-banner" style="background-color: {{ settings.primary_color }}; color: {{ settings.text_color }}; padding: 100px 20px; text-align: center;">
+  {% if settings.logo %}
+    <img src="{{ settings.logo | img_url: 'medium' }}" alt="Lorano Velli Logo" style="max-width: 250px; margin-bottom: 20px;">
+  {% endif %}
+  <h1>Welcome to Lorano Velli</h1>
+  <p>Luxury redefined. Elegance for every story.</p>
+  <a href="/collections/all" class="btn">Explore Collection</a>
+</section>
