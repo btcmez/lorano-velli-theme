@@ -20,11 +20,11 @@
         "default": "#323B60"
       },
       {
-        "type": "color",
-        "id": "text_color",
-        "label": "Text Color",
-        "default": "black"
-      }
+  "type": "color",
+  "id": "text_color",
+  "label": "Text Color",
+  "default": "#000000"
+}
     ]
   }
 ]
